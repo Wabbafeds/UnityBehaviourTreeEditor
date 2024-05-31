@@ -1,0 +1,270 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A067C3E3-BECB-4DFE-AD70-5B213F177E33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>BehaviourTreeProject</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".github\FUNDING.yml" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\sendemail-validate.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\pack\pack-62b1a44fbb006c190ae37c8a370b4527288b50f0.idx" />
+    <None Include=".git\objects\pack\pack-62b1a44fbb006c190ae37c8a370b4527288b50f0.pack" />
+    <None Include=".git\objects\pack\pack-62b1a44fbb006c190ae37c8a370b4527288b50f0.rev" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\UnityBehaviourTree\FileContentIndex\b2a379ea-1214-4e5e-9cb4-4281cf630c0c.vsidx" />
+    <None Include=".vs\UnityBehaviourTree\FileContentIndex\bfba0ee2-3aad-47d4-b147-b3e40c7ad02a.vsidx" />
+    <None Include=".vs\UnityBehaviourTree\v17\.wsuo" />
+    <None Include=".vs\UnityBehaviourTree\v17\DocumentLayout.json" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="CHANGELOG.md" />
+    <None Include="CHANGELOG.md.meta" />
+    <None Include="Documentation.meta" />
+    <None Include="Documentation\Images.meta" />
+    <None Include="Documentation\Images\behaviour_tree_view.png.meta" />
+    <None Include="Documentation\Images\blackboard_key.png.meta" />
+    <None Include="Documentation\Images\blackboard_key_overrides.png.meta" />
+    <None Include="Documentation\Images\editor.png.meta" />
+    <None Include="Documentation\Images\install_package.png.meta" />
+    <None Include="Documentation\Images\menu_command.png.meta" />
+    <None Include="Documentation\Images\new_node.png.meta" />
+    <None Include="Documentation\Images\new_script.png.meta" />
+    <None Include="Documentation\Images\new_tree.png.meta" />
+    <None Include="Documentation\Images\settings.png.meta" />
+    <None Include="Documentation\Images\thekiwicoder_profile_square_noborder_512_512.png.meta" />
+    <None Include="Editor.meta" />
+    <None Include="Editor\BehaviourTreeEditorWindow.cs.meta" />
+    <None Include="Editor\BehaviourTreeProjectSettings.cs.meta" />
+    <None Include="Editor\BehaviourTreeView.cs.meta" />
+    <None Include="Editor\BlackboardView.cs.meta" />
+    <None Include="Editor\CreateNodeWindow.cs.meta" />
+    <None Include="Editor\CustomEditors.meta" />
+    <None Include="Editor\CustomEditors\BehaviourTreeInstanceEditor.cs.meta" />
+    <None Include="Editor\DoubleClickNode.cs.meta" />
+    <None Include="Editor\EditorUtility.cs.meta" />
+    <None Include="Editor\HierarchySelector.cs.meta" />
+    <None Include="Editor\Icons.meta" />
+    <None Include="Editor\Icons\thekiwicoder_16x16.png.meta" />
+    <None Include="Editor\InspectorView.cs.meta" />
+    <None Include="Editor\NewScriptDialogView.cs.meta" />
+    <None Include="Editor\NodePort.cs.meta" />
+    <None Include="Editor\NodeView.cs.meta" />
+    <None Include="Editor\OverlayView.cs.meta" />
+    <None Include="Editor\PropertyDrawers.meta" />
+    <None Include="Editor\PropertyDrawers\BlackboardKeyPropertyDrawer.cs.meta" />
+    <None Include="Editor\PropertyDrawers\BlackboardKeyValuePairPropertyDrawer.cs.meta" />
+    <None Include="Editor\PropertyDrawers\NodePropertyPropertyDrawer.cs.meta" />
+    <None Include="Editor\ScriptTemplates.meta" />
+    <None Include="Editor\ScriptTemplates\ActionNodeTemplate.txt.meta" />
+    <None Include="Editor\ScriptTemplates\CompositeNodeTemplate.txt.meta" />
+    <None Include="Editor\ScriptTemplates\DecoratorNodeTempalte.txt.meta" />
+    <None Include="Editor\SerializedBehaviourTree.cs.meta" />
+    <None Include="Editor\SplitView.cs.meta" />
+    <None Include="Editor\thekiwicoder.behaviourtreeeditor.Editor.asmdef" />
+    <None Include="Editor\thekiwicoder.behaviourtreeeditor.Editor.asmdef.meta" />
+    <None Include="Editor\UIBuilder.meta" />
+    <None Include="Editor\UIBuilder\BehaviourTreeEditor.uxml" />
+    <None Include="Editor\UIBuilder\BehaviourTreeEditor.uxml.meta" />
+    <None Include="Editor\UIBuilder\BehaviourTreeEditorStyle.uss" />
+    <None Include="Editor\UIBuilder\BehaviourTreeEditorStyle.uss.meta" />
+    <None Include="Editor\UIBuilder\DropShadowSliced.png.meta" />
+    <None Include="Editor\UIBuilder\NodeView.uxml" />
+    <None Include="Editor\UIBuilder\NodeView.uxml.meta" />
+    <None Include="Editor\UIBuilder\NodeViewStyle.uss" />
+    <None Include="Editor\UIBuilder\NodeViewStyle.uss.meta" />
+    <None Include="LICENSE.MD" />
+    <None Include="LICENSE.MD.meta" />
+    <None Include="package.json" />
+    <None Include="package.json.meta" />
+    <None Include="README.md" />
+    <None Include="README.md.meta" />
+    <None Include="Runtime.meta" />
+    <None Include="Runtime\ActionNode.cs.meta" />
+    <None Include="Runtime\Actions.meta" />
+    <None Include="Runtime\Actions\Breakpoint.cs.meta" />
+    <None Include="Runtime\Actions\CompareProperty.cs.meta" />
+    <None Include="Runtime\Actions\Log.cs.meta" />
+    <None Include="Runtime\Actions\MoveToPosition.cs.meta" />
+    <None Include="Runtime\Actions\RandomFailure.cs.meta" />
+    <None Include="Runtime\Actions\RandomPosition.cs.meta" />
+    <None Include="Runtime\Actions\SetProperty.cs.meta" />
+    <None Include="Runtime\Actions\SubTree.cs.meta" />
+    <None Include="Runtime\Actions\Wait.cs.meta" />
+    <None Include="Runtime\BehaviourTree.cs.meta" />
+    <None Include="Runtime\BehaviourTreeBuilder.cs.meta" />
+    <None Include="Runtime\BehaviourTreeInstance.cs.meta" />
+    <None Include="Runtime\Blackboard.cs.meta" />
+    <None Include="Runtime\BlackboardKey.cs.meta" />
+    <None Include="Runtime\BlackboardKeyTypes.cs.meta" />
+    <None Include="Runtime\BlackboardKeyValuePair.cs.meta" />
+    <None Include="Runtime\CompositeNode.cs.meta" />
+    <None Include="Runtime\Composites.meta" />
+    <None Include="Runtime\Composites\InterruptSelector.cs.meta" />
+    <None Include="Runtime\Composites\Parallel.cs.meta" />
+    <None Include="Runtime\Composites\RandomSelector.cs.meta" />
+    <None Include="Runtime\Composites\Selector.cs.meta" />
+    <None Include="Runtime\Composites\Sequencer.cs.meta" />
+    <None Include="Runtime\Composites\Switch.cs.meta" />
+    <None Include="Runtime\Context.cs.meta" />
+    <None Include="Runtime\DecoratorNode.cs.meta" />
+    <None Include="Runtime\Decorators.meta" />
+    <None Include="Runtime\Decorators\Failure.cs.meta" />
+    <None Include="Runtime\Decorators\Inverter.cs.meta" />
+    <None Include="Runtime\Decorators\Repeat.cs.meta" />
+    <None Include="Runtime\Decorators\Succeed.cs.meta" />
+    <None Include="Runtime\Decorators\Timeout.cs.meta" />
+    <None Include="Runtime\Node.cs.meta" />
+    <None Include="Runtime\NodeProperty.cs.meta" />
+    <None Include="Runtime\RootNode.cs.meta" />
+    <None Include="Runtime\thekiwicoder.behaviourtreeeditor.asmdef" />
+    <None Include="Runtime\thekiwicoder.behaviourtreeeditor.asmdef.meta" />
+    <None Include="Samples~\RandomWalk.meta" />
+    <None Include="Samples~\RandomWalk\NavMesh.asset" />
+    <None Include="Samples~\RandomWalk\NavMesh.asset.meta" />
+    <None Include="Samples~\RandomWalk\RandomWalk.unity" />
+    <None Include="Samples~\RandomWalk\RandomWalk.unity.meta" />
+    <None Include="Samples~\RandomWalk\RandomWalkTree.asset" />
+    <None Include="Samples~\RandomWalk\RandomWalkTree.asset.meta" />
+    <None Include="Third Party Notices.md" />
+    <None Include="Third Party Notices.md.meta" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Documentation\Images\behaviour_tree_view.png" />
+    <Content Include="Documentation\Images\blackboard_key.png" />
+    <Content Include="Documentation\Images\blackboard_key_overrides.png" />
+    <Content Include="Documentation\Images\editor.png" />
+    <Content Include="Documentation\Images\install_package.png" />
+    <Content Include="Documentation\Images\menu_command.png" />
+    <Content Include="Documentation\Images\new_node.png" />
+    <Content Include="Documentation\Images\new_script.png" />
+    <Content Include="Documentation\Images\new_tree.png" />
+    <Content Include="Documentation\Images\settings.png" />
+    <Content Include="Documentation\Images\thekiwicoder_profile_square_noborder_512_512.png" />
+    <Content Include="Editor\Icons\thekiwicoder_16x16.png" />
+    <Content Include="Editor\ScriptTemplates\ActionNodeTemplate.txt" />
+    <Content Include="Editor\ScriptTemplates\CompositeNodeTemplate.txt" />
+    <Content Include="Editor\ScriptTemplates\DecoratorNodeTempalte.txt" />
+    <Content Include="Editor\UIBuilder\DropShadowSliced.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Editor\BehaviourTreeEditorWindow.cs" />
+    <Compile Include="Editor\BehaviourTreeProjectSettings.cs" />
+    <Compile Include="Editor\BehaviourTreeView.cs" />
+    <Compile Include="Editor\BlackboardView.cs" />
+    <Compile Include="Editor\CreateNodeWindow.cs" />
+    <Compile Include="Editor\CustomEditors\BehaviourTreeInstanceEditor.cs" />
+    <Compile Include="Editor\DoubleClickNode.cs" />
+    <Compile Include="Editor\EditorUtility.cs" />
+    <Compile Include="Editor\HierarchySelector.cs" />
+    <Compile Include="Editor\InspectorView.cs" />
+    <Compile Include="Editor\NewScriptDialogView.cs" />
+    <Compile Include="Editor\NodePort.cs" />
+    <Compile Include="Editor\NodeView.cs" />
+    <Compile Include="Editor\OverlayView.cs" />
+    <Compile Include="Editor\PropertyDrawers\BlackboardKeyPropertyDrawer.cs" />
+    <Compile Include="Editor\PropertyDrawers\BlackboardKeyValuePairPropertyDrawer.cs" />
+    <Compile Include="Editor\PropertyDrawers\NodePropertyPropertyDrawer.cs" />
+    <Compile Include="Editor\SerializedBehaviourTree.cs" />
+    <Compile Include="Editor\SplitView.cs" />
+    <Compile Include="Runtime\ActionNode.cs" />
+    <Compile Include="Runtime\Actions\Breakpoint.cs" />
+    <Compile Include="Runtime\Actions\CompareProperty.cs" />
+    <Compile Include="Runtime\Actions\Log.cs" />
+    <Compile Include="Runtime\Actions\MoveToPosition.cs" />
+    <Compile Include="Runtime\Actions\RandomFailure.cs" />
+    <Compile Include="Runtime\Actions\RandomPosition.cs" />
+    <Compile Include="Runtime\Actions\SetProperty.cs" />
+    <Compile Include="Runtime\Actions\SubTree.cs" />
+    <Compile Include="Runtime\Actions\Wait.cs" />
+    <Compile Include="Runtime\BehaviourTree.cs" />
+    <Compile Include="Runtime\BehaviourTreeBuilder.cs" />
+    <Compile Include="Runtime\BehaviourTreeInstance.cs" />
+    <Compile Include="Runtime\Blackboard.cs" />
+    <Compile Include="Runtime\BlackboardKey.cs" />
+    <Compile Include="Runtime\BlackboardKeyTypes.cs" />
+    <Compile Include="Runtime\BlackboardKeyValuePair.cs" />
+    <Compile Include="Runtime\CompositeNode.cs" />
+    <Compile Include="Runtime\Composites\InterruptSelector.cs" />
+    <Compile Include="Runtime\Composites\Parallel.cs" />
+    <Compile Include="Runtime\Composites\RandomSelector.cs" />
+    <Compile Include="Runtime\Composites\Selector.cs" />
+    <Compile Include="Runtime\Composites\Sequencer.cs" />
+    <Compile Include="Runtime\Composites\Switch.cs" />
+    <Compile Include="Runtime\Context.cs" />
+    <Compile Include="Runtime\DecoratorNode.cs" />
+    <Compile Include="Runtime\Decorators\Failure.cs" />
+    <Compile Include="Runtime\Decorators\Inverter.cs" />
+    <Compile Include="Runtime\Decorators\Repeat.cs" />
+    <Compile Include="Runtime\Decorators\Succeed.cs" />
+    <Compile Include="Runtime\Decorators\Timeout.cs" />
+    <Compile Include="Runtime\Node.cs" />
+    <Compile Include="Runtime\NodeProperty.cs" />
+    <Compile Include="Runtime\RootNode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\BehaviourTreeProject\v17\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
