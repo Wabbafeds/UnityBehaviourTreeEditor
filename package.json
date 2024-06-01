@@ -1,5 +1,5 @@
 {
-    "name": "com.thekiwicoder.behaviourtreeditor",
+    "name": "WabbaBehaviourTree",
     "version": "0.0.20",
     "displayName": "Behaviour Tree Editor",
     "description": "Behaviour Tree runtime and Editor built with UI Toolkit",
@@ -13,14 +13,14 @@
    "keywords": [
       "behaviour tree",
       "behaviour tree editor",
-      "thekiwicoder",
+      "wabbafeds",
       "ai",
       "ai behaviour tree"
     ],
     "author": {
-      "name": "TheKiwiCoder",
-      "email": "thekiwicoder@gmail.com",
-      "url": "https://www.thekiwicoder.com"
+      "name": "Wabbafeds",
+      "email": "",
+      "url": ""
     },
     "samples": [
       {
