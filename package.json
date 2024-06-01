@@ -1,5 +1,5 @@
 {
-    "name": "WabbaBehaviourTree",
+    "name": "com.wabbafeds.behaviourtreeeditor",
     "version": "0.0.20",
     "displayName": "Behaviour Tree Editor",
     "description": "Behaviour Tree runtime and Editor built with UI Toolkit",
