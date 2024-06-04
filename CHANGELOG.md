@@ -33,8 +33,7 @@ All notable changes to this package will be documented in this file.
 
 # [0.0.21] - 02-05-2024
 
-### Changed
-- Updated behaviour tree view classes to use [UXmlElement] attribute instead of deprecated uxml factory / traits
+Note this package is still in very early development and in high flux. 
 
 # [0.0.20] - 29-11-2023
 

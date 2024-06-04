@@ -11,8 +11,7 @@ using UnityEngine.XR;
 
 namespace TheKiwiCoder {
 
-    public class NodeView : UnityEditor.Experimental.GraphView.Node {
-        
+    public class NodeView : UnityEditor.Experimental.GraphView.Node { //describe how a node should be visualized in the editor; it derives from the abse node of graph view
         public Action<NodeView> OnNodeSelected;
         public Node node;
         public Port input;
@@ -103,8 +102,8 @@ namespace TheKiwiCoder {
             }
         }
 
-        private void SetupClasses() {
-            if (node is ActionNode) {
+        private void SetupClasses() { //classes used in style sheet to assign different colours to each node type
+            if (node is ActionNode) { 
                 AddToClassList("action");
 
                 if (node is ConditionNode conditionNode) {
@@ -142,7 +141,7 @@ namespace TheKiwiCoder {
 
             if (input != null) {
                 input.portName = "";
-                input.style.flexDirection = FlexDirection.Column;
+                input.style.flexDirection = FlexDirection.Column; //so that the empty label of the port is under it adn the port is centered
                 inputContainer.Add(input);
             }
         }
@@ -186,7 +185,7 @@ namespace TheKiwiCoder {
             }
         }
 
-        public void SortChildren() {
+        public void SortChildren() { //so that if you reaorder the nodes in the editor, the children are reoder inside the parent node
             if (node is CompositeNode composite) {
                 composite.children.Sort(SortByHorizontalPosition);
             }

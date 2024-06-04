@@ -71,7 +71,7 @@ namespace TheKiwiCoder {
             }
         }
 
-        public BehaviourTree Clone() {
+        public BehaviourTree Clone() { //called to not modify the original scriptable object
             BehaviourTree tree = Instantiate(this);
             return tree;
         }

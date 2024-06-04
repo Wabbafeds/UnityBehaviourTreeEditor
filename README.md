@@ -8,9 +8,8 @@
 <br>
 <br>
     <h1>Behaviour Tree Editor</h1>
-    <img src="Documentation/Images/thekiwicoder_profile_square_noborder_512_512.png" width = "64" />
     <br>
-    Created by TheKiwiCoder
+    Based on TheKiwiCoder behaviour tree
 </div>
 
 ## Table of Contents
@@ -59,7 +58,7 @@ Note: If you receive the error `No 'git' executable was found` you're likely mis
 
 The first time opening up the behaviour tree editor a prompt will appear where you can either select an existing tree to open, or create a new one:
 
-<img src="Documentation/Images/new_tree.png" width = "200" />
+<img src="Documentation/Images/new_tree. png" width = "200" />
 
 Either select an existing tree using the dropdown, or create a new tree at the path specified.
 

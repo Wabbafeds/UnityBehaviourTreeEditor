@@ -1,0 +1,370 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A245150-553E-4BD1-9274-D38B4D2936EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>BTproj</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".github\FUNDING.yml" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\sendemail-validate.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\logs\refs\remotes\origin\main" />
+    <None Include=".git\logs\refs\remotes\upstream\HEAD" />
+    <None Include=".git\logs\refs\remotes\upstream\main" />
+    <None Include=".git\objects\07\b70f882744278efb1fdf8e591d63e2fb8c3022" />
+    <None Include=".git\objects\09\98dc4a19396840ba3c74d1f1e4d4c52330907d" />
+    <None Include=".git\objects\0b\07de1b2722ba759f6faeae2d82102330ed9b73" />
+    <None Include=".git\objects\0d\d712219df2f3d998d98fa34bd448f1e4cf483c" />
+    <None Include=".git\objects\11\24020c498417ca8a67c0eeeceeef17d67d78fd" />
+    <None Include=".git\objects\12\7f56b0c1aad99d54f2b12647a0e2f48b3aa6dd" />
+    <None Include=".git\objects\12\807edf044d13815d457528fe8631943fa662ab" />
+    <None Include=".git\objects\13\d1bfdd71b8d4073aec656dd25a2a6ad9a99a1a" />
+    <None Include=".git\objects\15\5d67f922bdd08fd0772dd97feb0026180f645b" />
+    <None Include=".git\objects\15\b701be706f2841f370b4a57a8ee6983ba45dd5" />
+    <None Include=".git\objects\16\54c6ecd6848a7fa1222937452a50763e861787" />
+    <None Include=".git\objects\20\117cd0ad4ec09553e6d740187053549071fd7b" />
+    <None Include=".git\objects\21\86bea59119fd5f07f71aa9044085eaf5ed1c54" />
+    <None Include=".git\objects\21\bd0237879a043339ee5ae20539ec764d5f7212" />
+    <None Include=".git\objects\22\7bc94a7c7b747293874747880c0cca2f75684f" />
+    <None Include=".git\objects\27\43097376ce58b41dfdee81f47f672bdfbd9412" />
+    <None Include=".git\objects\29\84da63af89c1bff34bc6140f50ea99083daf93" />
+    <None Include=".git\objects\29\dd5a01a269734e331c8cf07026325d61f93009" />
+    <None Include=".git\objects\2b\e6262ad027d76c9c3ac822f8307b317473be2b" />
+    <None Include=".git\objects\35\aecc91a7b2891af66188090e068d697dfaf1ea" />
+    <None Include=".git\objects\37\7f3766187ee244143f1f9ac6b062163d773ab3" />
+    <None Include=".git\objects\3b\a00718ae43da6094e92446f79a9f1587bbc423" />
+    <None Include=".git\objects\41\151cdd2c1251a34e5e9a92adab86818e2859df" />
+    <None Include=".git\objects\42\a19a792428695fd1dbedb667bed9f8f2fdb0f6" />
+    <None Include=".git\objects\44\db4f2db309eca702fa8e07506dfca4bea9503b" />
+    <None Include=".git\objects\47\27338ab9fe1189ea7ece8e2188cd4efb124f08" />
+    <None Include=".git\objects\52\444b6f0998913977a18f7e09c2371a64bea72d" />
+    <None Include=".git\objects\52\6b3881eb17ae8391431ca08e7577e2322f4479" />
+    <None Include=".git\objects\55\24d3962156a1a270c297dc1891c5e13d1a0714" />
+    <None Include=".git\objects\56\7fa47b62bc37e8b54292f7ec1e132e0adbe245" />
+    <None Include=".git\objects\56\84ade1c83f5bbc70ec32505bdbbb808ce83d2f" />
+    <None Include=".git\objects\5d\0104116352aa107d11fb5b3688898cade8518b" />
+    <None Include=".git\objects\62\1035d3055a424630b9cbc4b0a19a9fa587f18b" />
+    <None Include=".git\objects\63\15d8e2e6e80c7fd7f3682062b0dfdc024c7646" />
+    <None Include=".git\objects\6b\5d30165bed0a31823db84ef5181e9f6e9eae2f" />
+    <None Include=".git\objects\70\aef67a00f5a48bfb0d87044cf8f151e2685b5d" />
+    <None Include=".git\objects\71\eafe66c561b1130babb636fc9695de182e633a" />
+    <None Include=".git\objects\72\8bdf34cb24c565d37b525279ea49d2d3d51eb8" />
+    <None Include=".git\objects\72\d1837c6b2ad29385e4c81f7972ea80de6cefbc" />
+    <None Include=".git\objects\75\717bec3a3a67c98eaef99e20011682e7e25fee" />
+    <None Include=".git\objects\77\c0716f833a2a8b86c3df004a844ce492f86edc" />
+    <None Include=".git\objects\7b\1d77e22614eaadc9154388430e23d4e85f6e51" />
+    <None Include=".git\objects\82\526c7b5683ce4b3d240eedc0612b07723a02fe" />
+    <None Include=".git\objects\84\65dca2ee67c0dbf6149e0624db97f2890bc4fa" />
+    <None Include=".git\objects\84\e96a5073dc85655c77fd39c7205eae49643cd5" />
+    <None Include=".git\objects\85\0286affbe9a4b3450be2aaf1e12f339b02c2e7" />
+    <None Include=".git\objects\8a\cc9cdde98aea0f10c7cca6ac2463be08588a9b" />
+    <None Include=".git\objects\8c\63157089f82666980b48b0a3fa5f2ac8b69ada" />
+    <None Include=".git\objects\8d\30ef0d89aa5613c84cd2a012f58234a70c85b5" />
+    <None Include=".git\objects\8e\fd7603b7fa808427971b8443f455ba6f5917d4" />
+    <None Include=".git\objects\8f\a33f216eb4d9b5a43f1063d82c80f37d66f16b" />
+    <None Include=".git\objects\90\a0eada8d2e5d5f2f99ca44dcc10503f50b5a24" />
+    <None Include=".git\objects\93\29a454bb83532a6f4975f3e4dd7f5048271b6a" />
+    <None Include=".git\objects\93\a4bcaa32239254fec7e892f251d37088a78641" />
+    <None Include=".git\objects\96\493a16e88e594ab34b9f950c181658a8f8eb65" />
+    <None Include=".git\objects\97\361c93b5bae92a24be4d0f9ecfddf78f9572b7" />
+    <None Include=".git\objects\9a\add6c9478ef6d70f0183b698fbcf7f9b33257b" />
+    <None Include=".git\objects\9b\992d9b56cd0c9e1d1c3d449aecb55925ad86f7" />
+    <None Include=".git\objects\9c\ff49bd0afc7dd2f8086fd4fe7fb2c1b12dfa28" />
+    <None Include=".git\objects\a2\8b351415c16d1f29f13ed21031e50e9a7532df" />
+    <None Include=".git\objects\a3\6d5eba6fc1e284a808718632860af8a2788f07" />
+    <None Include=".git\objects\a4\d42a046ee2f10f5e427edef107f86961370301" />
+    <None Include=".git\objects\a7\51c759e43f6aca372213cab5e9f6ecd22519a1" />
+    <None Include=".git\objects\aa\c2a5edcc4a3b1fc53f76c9f07daae9f4c57edc" />
+    <None Include=".git\objects\ae\eb5528befbefdfe4fcbaf6dc3f2002e5e4d00a" />
+    <None Include=".git\objects\af\36f452f5c5332e4f30595e49997951f6f39950" />
+    <None Include=".git\objects\b1\97e1c34af0549e402d90fc3f908203bccd3d0b" />
+    <None Include=".git\objects\b1\b5296bf786d4fcd4fbbc5785d5b13ab9d1e7b5" />
+    <None Include=".git\objects\b4\a5578a29502cd7f719ef03e8ab60147db04aa5" />
+    <None Include=".git\objects\b4\bd28a687479175dd2c384fb158dd05fbf523fb" />
+    <None Include=".git\objects\b9\7b582e09346c30523920ea1fb3bbde5bd5b5c3" />
+    <None Include=".git\objects\bf\595234b89a8e4e2db03137303946d2b883ae6f" />
+    <None Include=".git\objects\c0\1f3900e2a280d181cacdd494bf2ebceaa3dbe3" />
+    <None Include=".git\objects\c3\8cf242c5c8c4653fde0d1b08d3be4e42ddaf39" />
+    <None Include=".git\objects\c5\2e2ba30a79580b3677af5fb9245ee9169b5552" />
+    <None Include=".git\objects\c5\5e909dfcaea25ae288e7fca9ab45be99aa27cf" />
+    <None Include=".git\objects\cb\73e794b5d4435a1bf1fb1f8b840d646a036b3f" />
+    <None Include=".git\objects\cc\1cf9de2d050855548fc30ddbe5d9eec7313d51" />
+    <None Include=".git\objects\d4\3d330e4b5810fc2ae10dc5433a39c48d088872" />
+    <None Include=".git\objects\d6\5eb2a2c621a0af4a910dabc5f980b7532b780d" />
+    <None Include=".git\objects\da\86a4c0ee4f0b42a3374a6196da5fbaa12c469e" />
+    <None Include=".git\objects\de\01466a57636ea3ffff040298b514ddab3cc42c" />
+    <None Include=".git\objects\df\f65e466e91c30d72183d0ca87f0f8064f2c2b4" />
+    <None Include=".git\objects\e0\2930e83a4d4cc477a1cc987992646e5a902a1c" />
+    <None Include=".git\objects\e0\6f533e2c83ebdf6eb956939468d729e41356c7" />
+    <None Include=".git\objects\e1\511f740f050dc65ae926e5bb91a2945390bd8e" />
+    <None Include=".git\objects\e3\ee5d93c1805eb842a025cd7638f47d7e751c0e" />
+    <None Include=".git\objects\e9\c8a2b13713b19936fb123cd4b0b08fe42310e1" />
+    <None Include=".git\objects\eb\7d86d106f264d42d84c875e0448c1aa48b87ee" />
+    <None Include=".git\objects\eb\ce8fb04b906d29ef6594e4b2ec9dc9af00b4d3" />
+    <None Include=".git\objects\ef\e7e163637b1443a7e287c6d539f3ed7ca41704" />
+    <None Include=".git\objects\f1\392c0071128a03b5a1e1b1224c43cbfaecc1a9" />
+    <None Include=".git\objects\f4\0f4a3f9add05de3bedf339aa8732429141d51d" />
+    <None Include=".git\objects\f8\cbc4fbe2baa1118fc339fb83ee9b1a0ab0b638" />
+    <None Include=".git\objects\fa\f9753a9ae74d4bef28abc7d110a54838d9f09c" />
+    <None Include=".git\objects\fc\822d4fb356c93a12a191cd4e925a0d49ab9a48" />
+    <None Include=".git\objects\ff\7e7b66185903f1f26cf44b066eefe194793dc8" />
+    <None Include=".git\objects\pack\pack-62b1a44fbb006c190ae37c8a370b4527288b50f0.idx" />
+    <None Include=".git\objects\pack\pack-62b1a44fbb006c190ae37c8a370b4527288b50f0.pack" />
+    <None Include=".git\objects\pack\pack-62b1a44fbb006c190ae37c8a370b4527288b50f0.rev" />
+    <None Include=".git\ORIG_HEAD" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".git\refs\remotes\origin\main" />
+    <None Include=".git\refs\remotes\upstream\HEAD" />
+    <None Include=".git\refs\remotes\upstream\main" />
+    <None Include="CHANGELOG.md" />
+    <None Include="CHANGELOG.md.meta" />
+    <None Include="Documentation.meta" />
+    <None Include="Documentation\Images.meta" />
+    <None Include="Documentation\Images\behaviour_tree_view.png.meta" />
+    <None Include="Documentation\Images\blackboard_key.png.meta" />
+    <None Include="Documentation\Images\blackboard_key_overrides.png.meta" />
+    <None Include="Documentation\Images\editor.png.meta" />
+    <None Include="Documentation\Images\install_package.png.meta" />
+    <None Include="Documentation\Images\menu_command.png.meta" />
+    <None Include="Documentation\Images\new_node.png.meta" />
+    <None Include="Documentation\Images\new_script.png.meta" />
+    <None Include="Documentation\Images\new_tree.png.meta" />
+    <None Include="Documentation\Images\settings.png.meta" />
+    <None Include="Documentation\Images\thekiwicoder_profile_square_noborder_512_512.png.meta" />
+    <None Include="Editor.meta" />
+    <None Include="Editor\BehaviourTreeEditorWindow.cs.meta" />
+    <None Include="Editor\BehaviourTreeProjectSettings.cs.meta" />
+    <None Include="Editor\BehaviourTreeView.cs.meta" />
+    <None Include="Editor\BlackboardView.cs.meta" />
+    <None Include="Editor\CreateNodeWindow.cs.meta" />
+    <None Include="Editor\CustomEditors.meta" />
+    <None Include="Editor\CustomEditors\BehaviourTreeInstanceEditor.cs.meta" />
+    <None Include="Editor\DoubleClickNode.cs.meta" />
+    <None Include="Editor\EditorUtility.cs.meta" />
+    <None Include="Editor\HierarchySelector.cs.meta" />
+    <None Include="Editor\Icons.meta" />
+    <None Include="Editor\Icons\thekiwicoder_16x16.png.meta" />
+    <None Include="Editor\InspectorView.cs.meta" />
+    <None Include="Editor\NewScriptDialogView.cs.meta" />
+    <None Include="Editor\NodePort.cs.meta" />
+    <None Include="Editor\NodeView.cs.meta" />
+    <None Include="Editor\OverlayView.cs.meta" />
+    <None Include="Editor\PropertyDrawers.meta" />
+    <None Include="Editor\PropertyDrawers\BlackboardKeyPropertyDrawer.cs.meta" />
+    <None Include="Editor\PropertyDrawers\BlackboardKeyValuePairPropertyDrawer.cs.meta" />
+    <None Include="Editor\PropertyDrawers\NodePropertyPropertyDrawer.cs.meta" />
+    <None Include="Editor\ScriptTemplates.meta" />
+    <None Include="Editor\ScriptTemplates\ActionNodeTemplate.txt.meta" />
+    <None Include="Editor\ScriptTemplates\CompositeNodeTemplate.txt.meta" />
+    <None Include="Editor\ScriptTemplates\DecoratorNodeTempalte.txt.meta" />
+    <None Include="Editor\SerializedBehaviourTree.cs.meta" />
+    <None Include="Editor\SplitView.cs.meta" />
+    <None Include="Editor\thekiwicoder.behaviourtreeeditor.Editor.asmdef" />
+    <None Include="Editor\thekiwicoder.behaviourtreeeditor.Editor.asmdef.meta" />
+    <None Include="Editor\UIBuilder.meta" />
+    <None Include="Editor\UIBuilder\BehaviourTreeEditor.uxml" />
+    <None Include="Editor\UIBuilder\BehaviourTreeEditor.uxml.meta" />
+    <None Include="Editor\UIBuilder\BehaviourTreeEditorStyle.uss" />
+    <None Include="Editor\UIBuilder\BehaviourTreeEditorStyle.uss.meta" />
+    <None Include="Editor\UIBuilder\DropShadowSliced.png.meta" />
+    <None Include="Editor\UIBuilder\NodeView.uxml" />
+    <None Include="Editor\UIBuilder\NodeView.uxml.meta" />
+    <None Include="Editor\UIBuilder\NodeViewStyle.uss" />
+    <None Include="Editor\UIBuilder\NodeViewStyle.uss.meta" />
+    <None Include="LICENSE.MD" />
+    <None Include="LICENSE.MD.meta" />
+    <None Include="package.json" />
+    <None Include="package.json.meta" />
+    <None Include="README.md" />
+    <None Include="README.md.meta" />
+    <None Include="Runtime.meta" />
+    <None Include="Runtime\ActionNode.cs.meta" />
+    <None Include="Runtime\Actions.meta" />
+    <None Include="Runtime\Actions\Breakpoint.cs.meta" />
+    <None Include="Runtime\Actions\CompareProperty.cs.meta" />
+    <None Include="Runtime\Actions\Log.cs.meta" />
+    <None Include="Runtime\Actions\MoveToPosition.cs.meta" />
+    <None Include="Runtime\Actions\RandomFailure.cs.meta" />
+    <None Include="Runtime\Actions\RandomPosition.cs.meta" />
+    <None Include="Runtime\Actions\SetProperty.cs.meta" />
+    <None Include="Runtime\Actions\SubTree.cs.meta" />
+    <None Include="Runtime\Actions\Wait.cs.meta" />
+    <None Include="Runtime\BehaviourTree.cs.meta" />
+    <None Include="Runtime\BehaviourTreeBuilder.cs.meta" />
+    <None Include="Runtime\BehaviourTreeInstance.cs.meta" />
+    <None Include="Runtime\Blackboard.cs.meta" />
+    <None Include="Runtime\BlackboardKey.cs.meta" />
+    <None Include="Runtime\BlackboardKeyTypes.cs.meta" />
+    <None Include="Runtime\BlackboardKeyValuePair.cs.meta" />
+    <None Include="Runtime\CompositeNode.cs.meta" />
+    <None Include="Runtime\Composites.meta" />
+    <None Include="Runtime\Composites\InterruptSelector.cs.meta" />
+    <None Include="Runtime\Composites\Parallel.cs.meta" />
+    <None Include="Runtime\Composites\RandomSelector.cs.meta" />
+    <None Include="Runtime\Composites\Selector.cs.meta" />
+    <None Include="Runtime\Composites\Sequencer.cs.meta" />
+    <None Include="Runtime\Composites\Switch.cs.meta" />
+    <None Include="Runtime\Context.cs.meta" />
+    <None Include="Runtime\DecoratorNode.cs.meta" />
+    <None Include="Runtime\Decorators.meta" />
+    <None Include="Runtime\Decorators\Failure.cs.meta" />
+    <None Include="Runtime\Decorators\Inverter.cs.meta" />
+    <None Include="Runtime\Decorators\Repeat.cs.meta" />
+    <None Include="Runtime\Decorators\Succeed.cs.meta" />
+    <None Include="Runtime\Decorators\Timeout.cs.meta" />
+    <None Include="Runtime\Node.cs.meta" />
+    <None Include="Runtime\NodeProperty.cs.meta" />
+    <None Include="Runtime\RootNode.cs.meta" />
+    <None Include="Runtime\thekiwicoder.behaviourtreeeditor.asmdef" />
+    <None Include="Runtime\thekiwicoder.behaviourtreeeditor.asmdef.meta" />
+    <None Include="Third Party Notices.md" />
+    <None Include="Third Party Notices.md.meta" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Documentation\Images\behaviour_tree_view.png" />
+    <Content Include="Documentation\Images\blackboard_key.png" />
+    <Content Include="Documentation\Images\blackboard_key_overrides.png" />
+    <Content Include="Documentation\Images\editor.png" />
+    <Content Include="Documentation\Images\install_package.png" />
+    <Content Include="Documentation\Images\menu_command.png" />
+    <Content Include="Documentation\Images\new_node.png" />
+    <Content Include="Documentation\Images\new_script.png" />
+    <Content Include="Documentation\Images\new_tree.png" />
+    <Content Include="Documentation\Images\settings.png" />
+    <Content Include="Documentation\Images\thekiwicoder_profile_square_noborder_512_512.png" />
+    <Content Include="Editor\Icons\thekiwicoder_16x16.png" />
+    <Content Include="Editor\ScriptTemplates\ActionNodeTemplate.txt" />
+    <Content Include="Editor\ScriptTemplates\CompositeNodeTemplate.txt" />
+    <Content Include="Editor\ScriptTemplates\DecoratorNodeTempalte.txt" />
+    <Content Include="Editor\UIBuilder\DropShadowSliced.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Editor\BehaviourTreeEditorWindow.cs" />
+    <Compile Include="Editor\BehaviourTreeProjectSettings.cs" />
+    <Compile Include="Editor\BehaviourTreeView.cs" />
+    <Compile Include="Editor\BlackboardView.cs" />
+    <Compile Include="Editor\CreateNodeWindow.cs" />
+    <Compile Include="Editor\CustomEditors\BehaviourTreeInstanceEditor.cs" />
+    <Compile Include="Editor\DoubleClickNode.cs" />
+    <Compile Include="Editor\EditorUtility.cs" />
+    <Compile Include="Editor\HierarchySelector.cs" />
+    <Compile Include="Editor\InspectorView.cs" />
+    <Compile Include="Editor\NewScriptDialogView.cs" />
+    <Compile Include="Editor\NodePort.cs" />
+    <Compile Include="Editor\NodeView.cs" />
+    <Compile Include="Editor\OverlayView.cs" />
+    <Compile Include="Editor\PropertyDrawers\BlackboardKeyPropertyDrawer.cs" />
+    <Compile Include="Editor\PropertyDrawers\BlackboardKeyValuePairPropertyDrawer.cs" />
+    <Compile Include="Editor\PropertyDrawers\NodePropertyPropertyDrawer.cs" />
+    <Compile Include="Editor\SerializedBehaviourTree.cs" />
+    <Compile Include="Editor\SplitView.cs" />
+    <Compile Include="Runtime\ActionNode.cs" />
+    <Compile Include="Runtime\Actions\Breakpoint.cs" />
+    <Compile Include="Runtime\Actions\CompareProperty.cs" />
+    <Compile Include="Runtime\Actions\Log.cs" />
+    <Compile Include="Runtime\Actions\MoveToPosition.cs" />
+    <Compile Include="Runtime\Actions\RandomFailure.cs" />
+    <Compile Include="Runtime\Actions\RandomPosition.cs" />
+    <Compile Include="Runtime\Actions\SetProperty.cs" />
+    <Compile Include="Runtime\Actions\SubTree.cs" />
+    <Compile Include="Runtime\Actions\Wait.cs" />
+    <Compile Include="Runtime\BehaviourTree.cs" />
+    <Compile Include="Runtime\BehaviourTreeBuilder.cs" />
+    <Compile Include="Runtime\BehaviourTreeInstance.cs" />
+    <Compile Include="Runtime\Blackboard.cs" />
+    <Compile Include="Runtime\BlackboardKey.cs" />
+    <Compile Include="Runtime\BlackboardKeyTypes.cs" />
+    <Compile Include="Runtime\BlackboardKeyValuePair.cs" />
+    <Compile Include="Runtime\CompositeNode.cs" />
+    <Compile Include="Runtime\Composites\InterruptSelector.cs" />
+    <Compile Include="Runtime\Composites\Parallel.cs" />
+    <Compile Include="Runtime\Composites\RandomSelector.cs" />
+    <Compile Include="Runtime\Composites\Selector.cs" />
+    <Compile Include="Runtime\Composites\Sequencer.cs" />
+    <Compile Include="Runtime\Composites\Switch.cs" />
+    <Compile Include="Runtime\Context.cs" />
+    <Compile Include="Runtime\DecoratorNode.cs" />
+    <Compile Include="Runtime\Decorators\Failure.cs" />
+    <Compile Include="Runtime\Decorators\Inverter.cs" />
+    <Compile Include="Runtime\Decorators\Repeat.cs" />
+    <Compile Include="Runtime\Decorators\Succeed.cs" />
+    <Compile Include="Runtime\Decorators\Timeout.cs" />
+    <Compile Include="Runtime\Node.cs" />
+    <Compile Include="Runtime\NodeProperty.cs" />
+    <Compile Include="Runtime\RootNode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\BTproj\v17\" />
+    <Folder Include=".vs\btpro\FileContentIndex\" />
+    <Folder Include=".vs\btpro\v17\" />
+    <Folder Include=".vs\UnityBehaviourTree\FileContentIndex\" />
+    <Folder Include=".vs\UnityBehaviourTree\v17\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
