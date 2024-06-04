@@ -9,7 +9,7 @@ using UnityEditor;
 
 namespace TheKiwiCoder {
 
-    public class NodeView : UnityEditor.Experimental.GraphView.Node {
+    public class NodeView : UnityEditor.Experimental.GraphView.Node { //describe how a node should be visualized in the editor; it derives from the abse node of graph view
         public Action<NodeView> OnNodeSelected;
         public Node node;
         public Port input;
@@ -67,7 +67,7 @@ namespace TheKiwiCoder {
             }
         }
 
-        private void SetupClasses() {
+        private void SetupClasses() { //classes used in style sheet to assign different colours to each node type 
             if (node is ActionNode) {
                 AddToClassList("action");
             } else if (node is CompositeNode) {
@@ -92,7 +92,7 @@ namespace TheKiwiCoder {
 
             if (input != null) {
                 input.portName = "";
-                input.style.flexDirection = FlexDirection.Column;
+                input.style.flexDirection = FlexDirection.Column; //so that the empty label of the port is under it adn the port is centered
                 inputContainer.Add(input);
             }
         }
@@ -133,7 +133,7 @@ namespace TheKiwiCoder {
             }
         }
 
-        public void SortChildren() {
+        public void SortChildren() { //so that if you reaorder the nodes in the editor, the children are reoder inside the parent node
             if (node is CompositeNode composite) {
                 composite.children.Sort(SortByHorizontalPosition);
             }
@@ -143,7 +143,7 @@ namespace TheKiwiCoder {
             return left.position.x < right.position.x ? -1 : 1;
         }
 
-        public void UpdateState() {
+        public void UpdateState() { //this function associates a class (for style sheet) so that we can have different style for different node states
 
             RemoveFromClassList("running");
             RemoveFromClassList("failure");
@@ -152,7 +152,7 @@ namespace TheKiwiCoder {
             if (Application.isPlaying) {
                 switch (node.state) {
                     case Node.State.Running:
-                        if (node.started) {
+                        if (node.started) { //because default node state is running
                             AddToClassList("running");
                         }
                         break;

@@ -10,7 +10,7 @@ using UnityEditor.Callbacks;
 
 namespace TheKiwiCoder {
 
-    public class BehaviourTreeEditorWindow : EditorWindow {
+    public class BehaviourTreeEditorWindow : EditorWindow {  //it gets called when interacting with a behaviour tree in inspector
 
         [System.Serializable]
         public class PendingScriptCreate {
@@ -64,7 +64,7 @@ namespace TheKiwiCoder {
         public BehaviourTree tree;
         public SerializedBehaviourTree serializer;
 
-        [MenuItem("TheKiwiCoder/BehaviourTreeEditor ...")]
+        [MenuItem("Tools/BehaviourTreeEditor")]
         public static void OpenWindow() {
             BehaviourTreeEditorWindow wnd = GetWindow<BehaviourTreeEditorWindow>();
             wnd.titleContent = new GUIContent("BehaviourTreeEditor");
@@ -78,7 +78,7 @@ namespace TheKiwiCoder {
             wnd.SelectNewTree(tree);
         }
 
-        [OnOpenAsset]
+        [OnOpenAsset]  //used so that if you double click on a behaviour tree, it opens the behaviour tree editor tab
         public static bool OnOpenAsset(int instanceId, int line) {
             if (Selection.activeObject is BehaviourTree) {
                 OpenWindow(Selection.activeObject as BehaviourTree);

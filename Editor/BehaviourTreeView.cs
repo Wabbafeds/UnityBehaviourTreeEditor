@@ -8,8 +8,8 @@ using System;
 using System.Linq;
 
 namespace TheKiwiCoder {
-    public class BehaviourTreeView : GraphView {
-        public new class UxmlFactory : UxmlFactory<BehaviourTreeView, GraphView.UxmlTraits> { }
+    public class BehaviourTreeView : GraphView { //controls how the behaviour tree view works
+        public new class UxmlFactory : UxmlFactory<BehaviourTreeView, GraphView.UxmlTraits> { } //class added so this script is showm in the custom contentn in the uxml editor
 
         // Node positions snap to 15 pixels
         public static int gridSnapSize = 15;
@@ -182,7 +182,7 @@ namespace TheKiwiCoder {
         }
 
         public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter) {
-            return ports.ToList().Where(endPort =>
+            return ports.ToList().Where(endPort =>      //returns all compatible port, if start port is input this will return all output ports and viceversa
             endPort.direction != startPort.direction &&
             endPort.node != startPort.node).ToList();
         }
@@ -240,7 +240,7 @@ namespace TheKiwiCoder {
             return graphViewChange;
         }
 
-        public override void BuildContextualMenu(ContextualMenuPopulateEvent evt) {
+        public override void BuildContextualMenu(ContextualMenuPopulateEvent evt) { //override the contextual menu (right click)
             //base.BuildContextualMenu(evt); // Disable default cut/copy/paste context menu options.. who uses those anyway?
 
             CreateNodeWindow.Show(evt.mousePosition, null);
